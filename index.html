@@ -1,0 +1,709 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101d1a">
+    <link rel="stylesheet" href="./style.css">
+    <title>NeuroMovimiento | CTBH</title>
+
+</head>
+
+<body>
+
+<!-- NAVEGACIÓN -->
+<header class="navegacion">
+    <div class="contenedor nav-interior">
+
+        <a class="logo" href="#inicio">
+            <span class="logo-icono">✳</span>
+            <span>Neuro<span>Movimiento</span></span>
+        </a>
+
+        <button class="menu-movil" id="menuToggle"
+                aria-label="Abrir menú" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="enlaces" id="navLinks">
+            <a href="#problema">El problema</a>
+            <a href="#molecular">Neurociencia</a>
+            <a href="#deportes">Deportes</a>
+            <a href="#hallazgos">Hallazgos</a>
+            <a href="#recomendaciones">Propuestas</a>
+            <a href="#recomendaciones" class="boton-nav">
+                Pasar a la acción ↗
+            </a>
+        </nav>
+    </div>
+
+    <div class="progreso" id="progressBar"></div>
+</header>
+
+<!-- INICIO -->
+<header class="hero" id="inicio">
+    <div class="contenedor hero-interior">
+
+        <div>
+            <div class="etiqueta">Ciencia · Movimiento · Aprendizaje</div>
+
+            <h1>
+                Neurobiología del ejercicio y
+                <span>rendimiento adolescente.</span>
+            </h1>
+
+            <p class="hero-descripcion">
+                El movimiento como motor del cerebro. Una investigación
+                basada en el estudio de caso del Colegio Técnico Benjamín
+                Herrera (CTBH) y la neurociencia aplicada.
+            </p>
+
+            <p class="hero-destacado">
+                La adolescencia es una ventana crítica de plasticidad neural.
+                Descubre cómo la actividad física puede relacionarse con la
+                atención, el aprendizaje y el bienestar emocional.
+            </p>
+
+            <div class="botones">
+                <a href="#problema" class="boton boton-verde">
+                    Explorar investigación ↓
+                </a>
+
+                <a href="#hallazgos" class="boton boton-borde">
+                    Ver datos del CTBH ↗
+                </a>
+            </div>
+        </div>
+
+        <div class="cerebro-visual">
+            <div class="orbita">
+                <div class="cerebro">✳</div>
+                <div class="burbuja burbuja-1">Plasticidad neural</div>
+                <div class="burbuja burbuja-2">Cuerpo en movimiento</div>
+                <div class="burbuja burbuja-3">Aprendizaje</div>
+            </div>
+
+            <div class="hero-cifra">
+                <strong>60′</strong>
+                <span>de actividad física diaria<br>
+                    recomendada para jóvenes por la OMS</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<!-- 1. EL PROBLEMA -->
+<section id="problema">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">01 / EL DESAFÍO</div>
+                <h2>Un cerebro en construcción necesita movimiento.</h2>
+            </div>
+
+            <p class="introduccion">
+                Durante la adolescencia, distintas redes cerebrales siguen
+                madurando. La actividad física es un hábito que puede apoyar
+                la salud y los procesos de aprendizaje.
+            </p>
+        </div>
+
+        <div class="rejilla-3">
+
+            <article class="tarjeta revelar">
+                <div class="icono-tarjeta">◎</div>
+                <h3>Un cerebro que cambia</h3>
+                <p>
+                    La poda sináptica y la mielinización ayudan a reorganizar
+                    los circuitos cerebrales, incluida la corteza prefrontal
+                    y las redes relacionadas con la memoria.
+                </p>
+            </article>
+
+            <article class="tarjeta revelar demora-1">
+                <div class="icono-tarjeta">↗</div>
+                <h3>Funciones ejecutivas</h3>
+                <p>
+                    La atención, el control inhibitorio, la flexibilidad
+                    cognitiva y la memoria de trabajo son habilidades
+                    importantes para resolver tareas académicas.
+                </p>
+            </article>
+
+            <article class="tarjeta revelar demora-2">
+                <div class="icono-tarjeta">♡</div>
+                <h3>Equilibrio emocional</h3>
+                <p>
+                    El movimiento regular puede contribuir al estado de ánimo,
+                    al manejo del estrés y a una rutina de sueño más saludable.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="panel-datos revelar">
+            <h3>Radiografía de actividad física · CTBH</h3>
+            <p class="nota-datos">
+                Frecuencia semanal reportada en el material de la investigación.
+            </p>
+
+            <div class="fila-barra">
+                <span>Sedentario</span>
+                <div class="barra-fondo">
+                    <div class="barra" data-ancho="35"></div>
+                </div>
+                <span class="porcentaje">35%</span>
+            </div>
+
+            <div class="fila-barra">
+                <span>Moderado</span>
+                <div class="barra-fondo">
+                    <div class="barra moderada" data-ancho="48"></div>
+                </div>
+                <span class="porcentaje">48%</span>
+            </div>
+
+            <div class="fila-barra">
+                <span>Óptimo</span>
+                <div class="barra-fondo">
+                    <div class="barra optima" data-ancho="17"></div>
+                </div>
+                <span class="porcentaje">17%</span>
+            </div>
+
+            <p class="nota-datos">
+                El material suministrado describe una muestra de 2.688
+                estudiantes y una edad media de 13,73 años. Verifica la fuente
+                y la metodología antes de presentar estos valores como
+                resultados publicados.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- 2. NEUROCIENCIA MOLECULAR -->
+<section class="molecular" id="molecular">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">02 / LA CONEXIÓN MOLECULAR</div>
+                <h2>Del músculo a la mente: una cascada de señales.</h2>
+            </div>
+
+            <p class="introduccion">
+                El ejercicio activa procesos fisiológicos complejos.
+                Algunas moléculas y vías se estudian por su posible papel
+                en la plasticidad y la función cerebral.
+            </p>
+        </div>
+
+        <div class="flujo">
+
+            <article class="paso revelar">
+                <small>PASO 01</small>
+                <h3>Contracción muscular</h3>
+                <p>
+                    El músculo activo responde al esfuerzo y pone en marcha
+                    distintas señales metabólicas.
+                </p>
+            </article>
+
+            <article class="paso revelar demora-1">
+                <small>PASO 02</small>
+                <h3>PGC-1α y FNDC5</h3>
+                <p>
+                    Estas vías participan en procesos relacionados con la
+                    expresión de proteínas musculares.
+                </p>
+            </article>
+
+            <article class="paso revelar demora-2">
+                <small>PASO 03</small>
+                <h3>Irisina</h3>
+                <p>
+                    Esta miocina se investiga por su posible relación entre
+                    el ejercicio periférico y el sistema nervioso.
+                </p>
+            </article>
+
+            <article class="paso revelar demora-3">
+                <small>PASO 04</small>
+                <h3>BDNF y plasticidad</h3>
+                <p>
+                    El BDNF participa en la supervivencia neuronal y en
+                    procesos vinculados con la plasticidad sináptica.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="neuroquimica">
+
+            <div class="neuro-item revelar">
+                <strong>Dopamina</strong>
+                <p>Motivación, aprendizaje y memoria de trabajo.</p>
+            </div>
+
+            <div class="neuro-item revelar demora-1">
+                <strong>Serotonina</strong>
+                <p>Regulación del ánimo y del sueño.</p>
+            </div>
+
+            <div class="neuro-item revelar demora-2">
+                <strong>Norepinefrina</strong>
+                <p>Alerta y orientación de la atención.</p>
+            </div>
+
+            <div class="neuro-item revelar demora-3">
+                <strong>Eje HHA</strong>
+                <p>Respuesta fisiológica al estrés y cortisol.</p>
+            </div>
+
+        </div>
+
+        <p style="margin-top:25px;font-size:.83rem;color:#625f7b">
+            Nota científica: esta secuencia es una simplificación didáctica.
+            Los mecanismos varían según el tipo de ejercicio, la intensidad
+            y la persona. No debe interpretarse como una cadena causal única
+            completamente demostrada en adolescentes.
+        </p>
+
+    </div>
+</section>
+
+<!-- 3. TIPOS DE DEPORTE -->
+<section id="deportes">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">03 / DEMANDA COGNITIVA</div>
+                <h2>No todos los deportes exigen lo mismo al cerebro.</h2>
+            </div>
+
+            <p class="introduccion">
+                Las habilidades abiertas y cerradas permiten describir cuánto
+                cambia el entorno y cuánta información debe procesar el deportista.
+            </p>
+        </div>
+
+        <div class="deportes">
+
+            <article class="deporte deporte-abierto revelar">
+                <div class="tipo" style="color:var(--verde)">
+                    Open Skills · OSS
+                </div>
+
+                <h3>Leer, anticipar, decidir.</h3>
+
+                <p>
+                    Entornos dinámicos e impredecibles que exigen ajustar la
+                    acción según compañeros, rivales y cambios del juego.
+                </p>
+
+                <div class="etiquetas-deporte">
+                    <span class="etiqueta-deporte">Fútbol</span>
+                    <span class="etiqueta-deporte">Baloncesto</span>
+                    <span class="etiqueta-deporte">Voleibol</span>
+                    <span class="etiqueta-deporte">Artes marciales</span>
+                </div>
+
+                <div class="distribucion">
+                    <strong>62%</strong>
+                    <div class="distribucion-fondo">
+                        <div class="distribucion-relleno"
+                             style="width:62%"></div>
+                    </div>
+                    <small>CTBH*</small>
+                </div>
+            </article>
+
+            <article class="deporte deporte-cerrado revelar demora-1">
+                <div class="tipo" style="color:#6b5bb2">
+                    Closed Skills · CSS
+                </div>
+
+                <h3>Ritmo, precisión, constancia.</h3>
+
+                <p>
+                    Entornos relativamente estables y predecibles en los que
+                    se repiten patrones y se regula el esfuerzo.
+                </p>
+
+                <div class="etiquetas-deporte">
+                    <span class="etiqueta-deporte">Natación</span>
+                    <span class="etiqueta-deporte">Atletismo</span>
+                    <span class="etiqueta-deporte">Gimnasia</span>
+                    <span class="etiqueta-deporte">Ciclismo</span>
+                </div>
+
+                <div class="distribucion">
+                    <strong>38%</strong>
+                    <div class="distribucion-fondo">
+                        <div class="distribucion-relleno"
+                             style="width:38%;background:#8d83ce"></div>
+                    </div>
+                    <small>CTBH*</small>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="nota-datos" style="margin-top:18px">
+            *Porcentajes incluidos en el contenido proporcionado. Ambos tipos
+            de actividad pueden aportar beneficios físicos y cognitivos.
+        </p>
+
+    </div>
+</section>
+
+<!-- 4. HALLAZGOS -->
+<section class="hallazgos" id="hallazgos">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">04 / HALLAZGOS REPORTADOS</div>
+                <h2>Lo que los estudiantes dicen notar.</h2>
+            </div>
+
+            <p class="introduccion">
+                El material del caso CTBH presenta estos porcentajes como
+                percepciones de estudiantes físicamente activos. No constituyen
+                por sí solos una prueba de causalidad.
+            </p>
+        </div>
+
+        <div class="rejilla-hallazgos">
+
+            <article class="hallazgo revelar">
+                <div class="cifra" data-cifra="68">0%</div>
+                <p>
+                    Percibe más agudeza mental y foco en clase después de hacer
+                    ejercicio.
+                </p>
+            </article>
+
+            <article class="hallazgo revelar demora-1">
+                <div class="cifra" data-cifra="81">0%</div>
+                <p>
+                    Reporta menos ansiedad o pensamientos repetitivos antes
+                    de exámenes.
+                </p>
+            </article>
+
+            <article class="hallazgo revelar demora-2">
+                <div class="cifra" data-cifra="58">0%</div>
+                <p>
+                    Dice que le resulta más fácil resolver problemas abstractos
+                    y fórmulas.
+                </p>
+            </article>
+
+            <article class="hallazgo revelar demora-3">
+                <div class="cifra" data-cifra="76">0%</div>
+                <p>
+                    Señala que concilia el sueño más rápido.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="promedio revelar">
+            <div>
+                <div class="promedio-cifra">+0,44</div>
+                <p>
+                    Puntos de promedio por cada 30 minutos diarios adicionales,
+                    según la estimación descrita en el material.
+                </p>
+            </div>
+
+            <div>
+                <h3>Actividad física y promedio académico</h3>
+
+                <p>
+                    El documento plantea una asociación entre la actividad
+                    física moderada-vigorosa (MVPA) y el GPA, con rutas
+                    biológicas y rutas indirectas como el autoconcepto y
+                    la gestión del tiempo.
+                </p>
+
+                <p style="font-size:.82rem">
+                    Importante: esta cifra necesita una fuente verificable,
+                    definición de escala académica, tamaño muestral y análisis
+                    estadístico. Una asociación no demuestra por sí sola
+                    causalidad.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. ATLETAS -->
+<section id="atletas">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">05 / LECCIONES DE LA ÉLITE</div>
+                <h2>El rendimiento también necesita equilibrio.</h2>
+            </div>
+
+            <p class="introduccion">
+                Las trayectorias deportivas permiten conversar sobre resiliencia,
+                presión, identidad y redes de apoyo.
+            </p>
+        </div>
+
+        <div class="atletas">
+
+            <article class="atleta revelar">
+                <div class="iniciales">SB</div>
+                <h3>Simone Biles</h3>
+                <p>
+                    Escuchar las señales personales y priorizar el bienestar
+                    bajo presión.
+                </p>
+            </article>
+
+            <article class="atleta revelar demora-1">
+                <div class="iniciales">MJ</div>
+                <h3>Michael Jordan</h3>
+                <p>
+                    Disciplina y práctica, con espacio para el descanso y
+                    otras áreas de la vida.
+                </p>
+            </article>
+
+            <article class="atleta revelar demora-2">
+                <div class="iniciales">DM</div>
+                <h3>Diego Maradona</h3>
+                <p>
+                    La importancia del acompañamiento, el contexto y el
+                    apoyo sostenido.
+                </p>
+            </article>
+
+            <article class="atleta revelar demora-1">
+                <div class="iniciales">SW</div>
+                <h3>Serena Williams</h3>
+                <p>
+                    Confianza, perseverancia y apertura de oportunidades
+                    en el deporte.
+                </p>
+            </article>
+
+            <article class="atleta revelar demora-2">
+                <div class="iniciales">MA</div>
+                <h3>Muhammad Ali</h3>
+                <p>
+                    Usar la voz propia y la visibilidad para desafiar
+                    barreras sociales.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- 6. SEGURIDAD -->
+<section id="seguridad" style="padding-top:20px">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">06 / DOSIS Y SEGURIDAD</div>
+                <h2>Progresar sí. Ignorar el descanso, no.</h2>
+            </div>
+
+            <p class="introduccion">
+                La mejor rutina es la que se adapta a la edad, condición,
+                salud, horarios y preferencias del estudiante.
+            </p>
+        </div>
+
+        <div class="seguridad-grid">
+
+            <article class="seguridad-card revelar">
+                <div class="icono-tarjeta">↗</div>
+                <h3>Una dosis sostenible</h3>
+
+                <p>
+                    Construir el hábito gradualmente, alternar esfuerzos,
+                    dormir lo suficiente y respetar días de recuperación
+                    favorece la continuidad.
+                </p>
+
+                <ul>
+                    <li>Buscar variedad y disfrute.</li>
+                    <li>Aumentar la carga poco a poco.</li>
+                    <li>Consultar a profesionales ante síntomas persistentes.</li>
+                </ul>
+            </article>
+
+            <article class="seguridad-card alerta revelar demora-1">
+                <div class="icono-tarjeta"
+                     style="background:#ffe0c8">!</div>
+                <h3>Señales de sobrecarga</h3>
+
+                <p>
+                    El cansancio persistente, el deterioro del sueño, el dolor
+                    recurrente o una caída sostenida del rendimiento son
+                    motivos para revisar la rutina.
+                </p>
+
+                <p>
+                    No debe presentarse un porcentaje específico de riesgo por
+                    entrenar más de cinco días como universal sin una fuente
+                    clara y aplicable a la población estudiada.
+                </p>
+            </article>
+
+        </div>
+
+        <article class="seguridad-card rtl revelar" style="margin-top:20px">
+            <div class="numero-seccion">RETORNO AL APRENDIZAJE · RTL</div>
+            <h3>Después de una posible conmoción cerebral</h3>
+
+            <p>
+                Un golpe en la cabeza acompañado de síntomas requiere evaluación
+                médica. El regreso a clases y al deporte debe ser gradual,
+                coordinado con personal de salud y ajustado a la evolución
+                individual.
+            </p>
+
+            <div class="pasos-rtl">
+
+                <div class="paso-rtl">
+                    <strong>01 · Reposo relativo</strong>
+                    Actividades suaves según tolerancia.
+                </div>
+
+                <div class="paso-rtl">
+                    <strong>02 · Reingreso parcial</strong>
+                    Jornadas o tareas reducidas.
+                </div>
+
+                <div class="paso-rtl">
+                    <strong>03 · Adaptaciones</strong>
+                    Pausas y ajustes temporales.
+                </div>
+
+                <div class="paso-rtl">
+                    <strong>04 · Retorno total</strong>
+                    Cuando el equipo de salud lo autorice.
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- 7. RECOMENDACIONES Y ODS -->
+<section class="recomendaciones" id="recomendaciones">
+    <div class="contenedor">
+
+        <div class="encabezado-seccion revelar">
+            <div>
+                <div class="numero-seccion">07 / DEL CONOCIMIENTO A LA ACCIÓN</div>
+                <h2>Pequeños cambios, una comunidad más activa.</h2>
+            </div>
+
+            <p class="introduccion">
+                La promoción del movimiento funciona mejor cuando colegio,
+                familias y estudiantes participan en la construcción de
+                hábitos seguros e inclusivos.
+            </p>
+        </div>
+
+        <div class="rejilla-recomendaciones">
+
+            <article class="recomendacion revelar">
+                <div class="numero-seccion">PARA EL CTBH</div>
+                <h3>Un colegio que se mueve</h3>
+                <p>
+                    Explorar pausas activas, oportunidades de movimiento
+                    entre clases y rutas claras para responder a lesiones
+                    o conmociones, con personal capacitado.
+                </p>
+            </article>
+
+            <article class="recomendacion revelar demora-1">
+                <div class="numero-seccion">PARA LAS FAMILIAS</div>
+                <h3>Movimiento cotidiano</h3>
+                <p>
+                    Cuando sea seguro, fomentar caminar o ir en bicicleta,
+                    apoyar el juego libre y cuidar el equilibrio entre
+                    entrenamiento, estudio y descanso.
+                </p>
+            </article>
+
+            <article class="recomendacion revelar demora-2">
+                <div class="numero-seccion">PARA ESTUDIANTES</div>
+                <h3>Una rutina posible</h3>
+                <p>
+                    Elegir una actividad agradable, empezar con metas realistas,
+                    registrar cómo se siente el cuerpo y pedir apoyo cuando
+                    haga falta.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="ods revelar">
+            <div class="ods-item">
+                <span class="ods-numero">3</span>
+                Salud y bienestar
+            </div>
+
+            <div class="ods-item">
+                <span class="ods-numero">4</span>
+                Educación de calidad
+            </div>
+
+            <div class="ods-item">
+                <span class="ods-numero">10</span>
+                Reducción de las desigualdades
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <div class="contenedor footer-interior">
+
+        <div>
+            <div class="logo">
+                <span class="logo-icono">✳</span>
+                <span style="color:white">NeuroMovimiento · CTBH</span>
+            </div>
+
+            <p>Neurobiología del ejercicio y rendimiento adolescente.</p>
+
+            <p>
+                Contenido educativo. Colegio Técnico Benjamín Herrera.
+            </p>
+        </div>
+
+        <a href="#inicio" class="volver" aria-label="Volver al inicio">
+            ↑
+        </a>
+
+    </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>

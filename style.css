@@ -1,0 +1,1070 @@
+
+        /* ==========================
+           1. CONFIGURACIÓN GENERAL
+        ========================== */
+     :root {
+            --fondo: #f6f7f2;
+            --oscuro: #101d1a;
+            --verde: #b8ef70;
+            --verde-oscuro: #2e684f;
+            --texto: #172522;
+            --gris: #66746f;
+            --blanco: #ffffff;
+            --borde: #dfe5dc;
+            --lila: #e9e7fa;
+            --radio: 22px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--fondo);
+            color: var(--texto);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .contenedor {
+            width: min(1160px, calc(100% - 40px));
+            margin: auto;
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.15;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        /* ==========================
+           2. BARRA DE NAVEGACIÓN
+        ========================== */
+        .navegacion {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(246, 247, 242, .93);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--borde);
+        }
+
+        .nav-interior {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.05rem;
+            font-weight: 800;
+        }
+
+        .logo-icono {
+            background: var(--verde);
+            color: var(--oscuro);
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            font-size: 23px;
+        }
+
+        .logo span:last-child span {
+            color: var(--verde-oscuro);
+        }
+
+        .enlaces {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: .85rem;
+        }
+
+        .enlaces a {
+            transition: color .25s;
+        }
+
+        .enlaces a:hover {
+            color: var(--verde-oscuro);
+        }
+
+        .boton-nav {
+            background: var(--oscuro);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 30px;
+        }
+
+        .menu-movil {
+            display: none;
+            padding: 8px 12px;
+            border: 1px solid var(--borde);
+            background: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .progreso {
+            height: 3px;
+            width: 0;
+            background: var(--verde-oscuro);
+        }
+
+        /* ==========================
+           3. PORTADA PRINCIPAL
+        ========================== */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background: var(--oscuro);
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            right: -100px;
+            top: -160px;
+            border: 1px solid #b8ef7030;
+            border-radius: 50%;
+            box-shadow:
+                0 0 0 50px #b8ef7008,
+                0 0 0 100px #b8ef7005;
+        }
+
+        .hero-interior {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 45px;
+            align-items: center;
+            padding-top: 90px;
+            padding-bottom: 95px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            color: var(--verde);
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.7rem, 5.5vw, 5rem);
+            margin-bottom: 25px;
+            letter-spacing: -3px;
+        }
+
+        .hero h1 span {
+            color: var(--verde);
+        }
+
+        .hero-descripcion {
+            font-size: 1.08rem;
+            color: #c2cec8;
+            max-width: 630px;
+        }
+
+        .hero-destacado {
+            border-left: 3px solid var(--verde);
+            padding-left: 18px;
+            margin-top: 25px;
+            color: #e0e8e1;
+        }
+
+        .botones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 13px 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: .9rem;
+            transition: transform .25s, background .25s;
+        }
+
+        .boton:hover {
+            transform: translateY(-3px);
+        }
+
+        .boton-verde {
+            background: var(--verde);
+            color: var(--oscuro);
+        }
+
+        .boton-borde {
+            border: 1px solid #52645a;
+            color: white;
+        }
+
+        /* Ilustración hecha con CSS, sin imágenes externas */
+        .cerebro-visual {
+            min-height: 390px;
+            display: grid;
+            place-items: center;
+            position: relative;
+        }
+
+        .orbita {
+            width: min(100%, 350px);
+            aspect-ratio: 1;
+            border: 1px solid #3a5147;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            position: relative;
+            animation: flotar 6s ease-in-out infinite;
+        }
+
+        .orbita::before,
+        .orbita::after {
+            content: "";
+            position: absolute;
+            border: 1px solid #31483e;
+            border-radius: 50%;
+        }
+
+        .orbita::before {
+            inset: 28px;
+        }
+
+        .orbita::after {
+            inset: 65px;
+        }
+
+        .cerebro {
+            width: 140px;
+            height: 140px;
+            border-radius: 45% 55% 52% 48%;
+            background: var(--verde);
+            color: var(--oscuro);
+            display: grid;
+            place-items: center;
+            font-size: 4rem;
+            z-index: 2;
+            box-shadow: 0 0 70px #b8ef7025;
+        }
+
+        .burbuja {
+            position: absolute;
+            background: #1c3028;
+            border: 1px solid #42564c;
+            color: #dfe9df;
+            padding: 9px 12px;
+            border-radius: 12px;
+            font-size: .78rem;
+            z-index: 3;
+        }
+
+        .burbuja-1 {
+            top: 35px;
+            right: -5px;
+        }
+
+        .burbuja-2 {
+            bottom: 55px;
+            left: -12px;
+        }
+
+        .burbuja-3 {
+            bottom: 15px;
+            right: 5px;
+        }
+
+        .hero-cifra {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            color: #c2cec8;
+            font-size: .8rem;
+        }
+
+        .hero-cifra strong {
+            font-size: 2rem;
+            color: var(--verde);
+        }
+
+        /* ==========================
+           4. TÍTULOS Y TARJETAS
+        ========================== */
+        .encabezado-seccion {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .numero-seccion {
+            color: var(--verde-oscuro);
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .introduccion {
+            max-width: 430px;
+            color: var(--gris);
+        }
+
+        .rejilla-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .tarjeta {
+            background: white;
+            border: 1px solid var(--borde);
+            border-radius: var(--radio);
+            padding: 27px;
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px #1725220d;
+        }
+
+        .icono-tarjeta {
+            width: 48px;
+            height: 48px;
+            background: #edf5e6;
+            border-radius: 15px;
+            display: grid;
+            place-items: center;
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .tarjeta h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            color: var(--gris);
+            font-size: .92rem;
+            margin-bottom: 0;
+        }
+
+        /* ==========================
+           5. GRÁFICOS DEL CTBH
+        ========================== */
+        .panel-datos {
+            background: #e9eee5;
+            border-radius: var(--radio);
+            padding: 30px;
+            margin-top: 25px;
+        }
+
+        .panel-datos h3 {
+            margin-bottom: 8px;
+        }
+
+        .nota-datos {
+            color: var(--gris);
+            font-size: .8rem;
+            margin-bottom: 25px;
+        }
+
+        .fila-barra {
+            display: grid;
+            grid-template-columns: 120px 1fr 50px;
+            gap: 15px;
+            align-items: center;
+            margin: 20px 0;
+            font-size: .9rem;
+        }
+
+        .barra-fondo {
+            height: 12px;
+            border-radius: 30px;
+            background: #d5ddd2;
+            overflow: hidden;
+        }
+
+        .barra {
+            height: 100%;
+            width: 0;
+            background: var(--verde-oscuro);
+            border-radius: 30px;
+            transition: width 1.4s ease;
+        }
+
+        .barra.moderada {
+            background: #93b66b;
+        }
+
+        .barra.optima {
+            background: var(--oscuro);
+        }
+
+        .porcentaje {
+            text-align: right;
+            font-weight: 800;
+        }
+
+        /* ==========================
+           6. SECCIÓN MOLECULAR
+        ========================== */
+        .molecular {
+            background: var(--lila);
+        }
+
+        .molecular .numero-seccion {
+            color: #6254a7;
+        }
+
+        .flujo {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin: 35px 0;
+        }
+
+        .paso {
+            background: #ffffffc9;
+            border: 1px solid #d9d5f0;
+            padding: 22px;
+            border-radius: 18px;
+            position: relative;
+        }
+
+        .paso small {
+            color: #6b5bb2;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .paso h3 {
+            font-size: 1.05rem;
+            margin: 12px 0;
+        }
+
+        .paso p {
+            color: #62617b;
+            font-size: .88rem;
+            margin: 0;
+        }
+
+        .neuroquimica {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .neuro-item {
+            background: #ffffffa8;
+            border: 1px solid #d9d5f0;
+            padding: 18px;
+            border-radius: 15px;
+        }
+
+        .neuro-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .neuro-item p {
+            font-size: .85rem;
+            color: #62617b;
+            margin: 0;
+        }
+
+        /* ==========================
+           7. TIPOS DE DEPORTE
+        ========================== */
+        .deportes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .deporte {
+            padding: 30px;
+            border-radius: var(--radio);
+        }
+
+        .deporte-abierto {
+            background: var(--oscuro);
+            color: white;
+        }
+
+        .deporte-cerrado {
+            background: white;
+            border: 1px solid var(--borde);
+        }
+
+        .tipo {
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .deporte h3 {
+            font-size: 2rem;
+            margin: 18px 0 12px;
+        }
+
+        .deporte p {
+            opacity: .8;
+        }
+
+        .etiquetas-deporte {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 22px;
+        }
+
+        .etiqueta-deporte {
+            border: 1px solid currentColor;
+            border-radius: 30px;
+            padding: 6px 11px;
+            font-size: .8rem;
+        }
+
+        .distribucion {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .distribucion strong {
+            font-size: 1.2rem;
+        }
+
+        .distribucion-fondo {
+            flex: 1;
+            height: 7px;
+            background: #80918540;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .distribucion-relleno {
+            height: 100%;
+            background: var(--verde);
+            border-radius: 20px;
+        }
+
+        /* ==========================
+           8. HALLAZGOS
+        ========================== */
+        .hallazgos {
+            background: var(--oscuro);
+            color: white;
+        }
+
+        .hallazgos .numero-seccion {
+            color: var(--verde);
+        }
+
+        .hallazgos .introduccion {
+            color: #b4c1b8;
+        }
+
+        .rejilla-hallazgos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .hallazgo {
+            background: #162720;
+            border: 1px solid #34483e;
+            border-radius: 20px;
+            padding: 23px;
+        }
+
+        .cifra {
+            font-size: 2.8rem;
+            color: var(--verde);
+            font-weight: 850;
+            line-height: 1.2;
+            letter-spacing: -2px;
+        }
+
+        .hallazgo p {
+            color: #c0cdc4;
+            font-size: .9rem;
+            margin: 12px 0 0;
+        }
+
+        .promedio {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 30px;
+            align-items: center;
+            background: #20352b;
+            border-radius: var(--radio);
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .promedio-cifra {
+            color: var(--verde);
+            font-size: clamp(3.5rem, 7vw, 6rem);
+            font-weight: 850;
+            line-height: 1;
+            letter-spacing: -5px;
+        }
+
+        .promedio p {
+            color: #c5d0c7;
+            margin-top: 12px;
+        }
+
+        /* ==========================
+           9. ATLETAS
+        ========================== */
+        .atletas {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .atleta {
+            background: white;
+            border: 1px solid var(--borde);
+            padding: 20px;
+            border-radius: 18px;
+            transition: transform .25s;
+        }
+
+        .atleta:hover {
+            transform: translateY(-5px);
+        }
+
+        .iniciales {
+            width: 43px;
+            height: 43px;
+            background: var(--lila);
+            color: #554b93;
+            border-radius: 13px;
+            display: grid;
+            place-items: center;
+            font-weight: 850;
+            margin-bottom: 18px;
+        }
+
+        .atleta h3 {
+            font-size: 1rem;
+            margin-bottom: 9px;
+        }
+
+        .atleta p {
+            color: var(--gris);
+            font-size: .85rem;
+            margin: 0;
+        }
+
+        /* ==========================
+           10. SEGURIDAD Y RTL
+        ========================== */
+        .seguridad-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .seguridad-card {
+            background: white;
+            border: 1px solid var(--borde);
+            border-radius: var(--radio);
+            padding: 28px;
+        }
+
+        .seguridad-card.alerta {
+            background: #fff0e5;
+            border-color: #f2d5c1;
+        }
+
+        .seguridad-card h3 {
+            margin: 15px 0;
+        }
+
+        .seguridad-card p,
+        .seguridad-card li {
+            color: var(--gris);
+            font-size: .92rem;
+        }
+
+        .seguridad-card ul {
+            padding-left: 20px;
+        }
+
+        .rtl {
+            margin-top: 20px;
+        }
+
+        .pasos-rtl {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .paso-rtl {
+            background: #f3f5ef;
+            border-radius: 12px;
+            padding: 15px;
+            font-size: .83rem;
+        }
+
+        .paso-rtl strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* ==========================
+           11. RECOMENDACIONES
+        ========================== */
+        .recomendaciones {
+            background: #e9eee5;
+        }
+
+        .rejilla-recomendaciones {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .recomendacion {
+            background: white;
+            border: 1px solid var(--borde);
+            border-radius: 20px;
+            padding: 25px;
+        }
+
+        .recomendacion h3 {
+            margin: 15px 0 10px;
+        }
+
+        .recomendacion p {
+            color: var(--gris);
+            font-size: .92rem;
+            margin: 0;
+        }
+
+        .ods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .ods-item {
+            background: white;
+            border: 1px solid var(--borde);
+            border-radius: 13px;
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: .85rem;
+            font-weight: 750;
+        }
+
+        .ods-numero {
+            background: var(--oscuro);
+            color: var(--verde);
+            border-radius: 8px;
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+        }
+
+        /* ==========================
+           12. PIE DE PÁGINA
+        ========================== */
+        footer {
+            background: var(--oscuro);
+            color: #c1cec5;
+            padding: 42px 0;
+        }
+
+        .footer-interior {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer p {
+            font-size: .83rem;
+            color: #9eafa4;
+            margin: 8px 0 0;
+        }
+
+        .volver {
+            width: 44px;
+            height: 44px;
+            border: 1px solid #40564a;
+            border-radius: 50%;
+            color: var(--verde);
+            display: grid;
+            place-items: center;
+            font-size: 1.3rem;
+        }
+
+        /* ==========================
+           13. ANIMACIONES JAVASCRIPT
+        ========================== */
+        .revelar {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .revelar.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .demora-1 {
+            transition-delay: .1s;
+        }
+
+        .demora-2 {
+            transition-delay: .2s;
+        }
+
+        .demora-3 {
+            transition-delay: .3s;
+        }
+
+        @keyframes flotar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        /* ==========================
+           14. DISEÑO RESPONSIVE
+        ========================== */
+        @media (max-width: 900px) {
+            .hero-interior {
+                grid-template-columns: 1fr;
+                padding: 70px 0 90px;
+            }
+
+            .cerebro-visual {
+                min-height: 340px;
+            }
+
+            .enlaces {
+                gap: 12px;
+            }
+
+            .enlaces a:not(.boton-nav) {
+                display: none;
+            }
+
+            .rejilla-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .flujo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .neuroquimica,
+            .rejilla-hallazgos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .atletas {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .encabezado-seccion {
+                align-items: start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                width: calc(100% - 28px);
+            }
+
+            .nav-interior {
+                min-height: 66px;
+            }
+
+            .menu-movil {
+                display: block;
+            }
+
+            .enlaces {
+                display: none;
+                position: absolute;
+                top: 66px;
+                left: 0;
+                right: 0;
+                background: var(--fondo);
+                padding: 18px 22px;
+                border-bottom: 1px solid var(--borde);
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .enlaces.abierto {
+                display: flex;
+            }
+
+            .enlaces a:not(.boton-nav) {
+                display: block;
+                padding: 7px 0;
+            }
+
+            .boton-nav {
+                text-align: center;
+            }
+
+            .hero-interior {
+                padding: 60px 0 85px;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.5rem, 12vw, 3.8rem);
+                letter-spacing: -2px;
+            }
+
+            .cerebro-visual {
+                min-height: 290px;
+            }
+
+            .orbita {
+                width: 265px;
+            }
+
+            .cerebro {
+                width: 110px;
+                height: 110px;
+                font-size: 3.2rem;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .rejilla-3,
+            .deportes,
+            .seguridad-grid,
+            .rejilla-recomendaciones,
+            .promedio {
+                grid-template-columns: 1fr;
+            }
+
+            .panel-datos {
+                padding: 20px 14px;
+            }
+
+            .fila-barra {
+                grid-template-columns: 85px 1fr 42px;
+                gap: 8px;
+                font-size: .78rem;
+            }
+
+            .flujo {
+                grid-template-columns: 1fr;
+            }
+
+            .neuroquimica,
+            .rejilla-hallazgos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hallazgo {
+                padding: 17px;
+            }
+
+            .cifra {
+                font-size: 2.2rem;
+            }
+
+            .atletas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pasos-rtl {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-interior {
+                align-items: flex-start;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+
+            .revelar {
+                opacity: 1;
+                transform: none;
+            }
+        }
